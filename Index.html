@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Liste de mots et expressions</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: lightgray;
+    }
+    #btn-expressions {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #btn-mots {
+      margin-bottom: 10px;
+    }
+
+    #table-mots {
+      display: block;
+    }
+
+    #table-expressions {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Liste de mots et expressions</h1>
+<div id="page-mots">
+  <button class="btn" id="btn-expressions">Expressions</button>
+
+  <div id="table-mots">
+    <table>
+      <thead>
+        <tr>
+          <th>Registre familier</th>
+          <th>Registre  courant</th>
+          <th>Registre soutenu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bouffer</td>
+          <td>Manger</td>
+          <td>Se sustenter</td>
+        </tr>
+        <tr>
+          <td>Frangin</td>
+          <td>Frère</td>
+          <td>Frater</td>
+        </tr>
+        <tr>
+          <td>Choper</td>
+          <td>Attraper</td>
+          <td>Acquérir</td>
+        </tr>
+        <tr>
+          <td>Baraque</td>
+          <td>Maison</td>
+          <td>Demeure</td>
+        </tr>
+        <tr>
+          <td>Meuf</td>
+          <td>Femme</td>
+          <td>Dame</td>
+        </tr>
+        <tr>
+          <td>Fric</td>
+          <td>Argent</td>
+          <td>Finance</td>
+        </tr>
+        <tr>
+          <td>Gars</td>
+          <td>Homme</td>
+          <td>Individu</td>
+        </tr>
+        <tr>
+          <td>Taf</td>
+          <td>Travail</td>
+          <td>Emploi</td>
+        </tr>
+        <tr>
+          <td>Bagnole</td>
+          <td>Voiture</td>
+          <td>Automobile</td>
+        </tr>
+        <tr>
+          <td>Roupiller</td>
+          <td>Dormir</td>
+          <td>Sommeiller</td>
+        </tr>
+        <tr>
+          <td>Teuf</td>
+          <td>Soirée</td>
+          <td>Rassemblement</td>
+        </tr>
+        <tr>
+          <td>Blé</td>
+          <td>Argent</td>
+          <td>Finances</td>
+        </tr>
+        <tr>
+          <td>Pote</td>
+          <td>Ami</td>
+          <td>Camarade</td>
+        </tr>
+        <tr>
+          <td>Rincer</td>
+          <td>Payer</td>
+          <td>Rétribuer</td>
+        </tr>
+        <tr>
+          <td>Taulard</td>
+          <td>Prisonnier</td>
+          <td>Détenu</td>
+        </tr>
+        <tr>
+          <td>Vachement</td>
+          <td>Beaucoup</td>
+          <td>Abondamment</td>
+        </tr>
+        <tr>
+          <td>Déconner</td>
+          <td>Plaisanter</td>
+          <td>Badiner</td>
+        </tr>
+        <tr>
+          <td>Kiffer</td>
+          <td>Apprécier</td>
+          <td>Aimer</td>
+        </tr>
+        <tr>
+          <td>Galère</td>
+          <td>Difficulté</td>
+          <td>Contrariété</td>
+        </tr>
+        <tr>
+          <td>Bled</td>
+          <td>Village</td>
+          <td>Lieu reculé</td>
+        </tr>
+        <tr>
+          <td>Boloss</td>
+          <td>Idiot</td>
+          <td>Simplet</td>
+        </tr>
+        <tr>
+          <td>Pécho</td>
+          <td>Trouver</td>
+          <td>Dénicher</td>
+        </tr>
+        <tr>
+          <td>Gueule</td>
+          <td>Visage</td>
+          <td>Physionomie</td>
+        </tr>
+        <tr>
+          <td>Dar</td>
+          <td>Maison</td>
+          <td>Demeure</td>
+        </tr>
+        <tr>
+          <td>Zouz</td>
+          <td>Argent</td>
+          <td>Finance</td>
+        </tr>
+        <tr>
+          <td>Flamber</td>
+          <td>Dépenser</td>
+          <td>Débourser</td>
+        </tr>
+        <tr>
+          <td>Mec</td>
+          <td>Homme</td>
+          <td>Individu</td>
+        </tr>
+        <tr>
+          <td>Plomber</td>
+          <td>Échouer</td>
+          <td>Rater</td>
+        </tr>
+        <tr>
+          <td>Môme</td>
+          <td>Enfant</td>
+          <td>Jeune personne</td>
+        </tr>
+        <tr>
+          <td>Gueuler</td>
+          <td>Crier</td>
+          <td>Hurler</td>
+        </tr>
+        <tr>
+          <td>Flingue</td>
+          <td>Arme</td>
+          <td>Pistolet</td>
+        </tr>
+        <tr>
+          <td>Taule</td>
+          <td>Prison</td>
+          <td>Établissement pénitentiaire</td>
+        </tr>
+        <tr>
+          <td>Meuf</td>
+          <td>Copine</td>
+          <td>Compagne</td>
+        </tr>
+        <tr>
+          <td>Taffer</td>
+          <td>Travailler</td>
+          <td>Exercer</td>
+        </tr>
+        <tr>
+          <td>Roupie</td>
+          <td>Monnaie</td>
+          <td>Devise</td>
+        </tr>
+        <tr>
+          <td>Keum</td>
+          <td>Homme</td>
+          <td>Personne</td>
+        </tr>
+        <tr>
+          <td>Oseille</td>
+          <td>Argent</td>
+          <td>Fonds</td>
+        </tr>
+        <tr>
+          <td>Blinder</td>
+          <td>Remplir</td>
+          <td>Saturer</td>
+        </tr>
+        <tr>
+          <td>Jacter</td>
+          <td>Parler</td>
+          <td>S'exprimer</td>
+        </tr>
+        <tr>
+          <td>Poteau</td>
+          <td>Ami</td>
+          <td>Compagnon</td>
+        </tr>
+        <tr>
+          <td>Smic</td>
+          <td>Salaire</td>
+          <td>Rémunération</td>
+        </tr>
+        <tr>
+          <td>Tise</td>
+          <td>Boisson</td>
+          <td>Breuvage</td>
+        </tr>
+        <tr>
+          <td>Daron</td>
+          <td>Père</td>
+          <td>Géniteur</td>
+        </tr>
+        <tr>
+          <td>Bagnole</td>
+          <td>Voiture</td>
+          <td>Véhicule</td>
+        </tr>
+        <tr>
+          <td>Cramer</td>
+          <td>Brûler</td>
+          <td>Incinérer</td>
+        </tr>
+        <tr>
+          <td>Mec</td>
+          <td>Gars</td>
+          <td>Individu</td>
+        </tr>
+        <tr>
+          <td>Péter</td>
+          <td>Casser</td>
+          <td>Briser</td>
+        </tr>
+        <tr>
+          <td>Fringues</td>
+          <td>Vêtements</td>
+          <td>Habits</td>
+        </tr>
+        <tr>
+          <td>Tise</td>
+          <td>Alcool</td>
+          <td>Spiritueux</td>
+        </tr>
+        <tr>
+          <td>Kiffer</td>
+          <td>Aimer</td>
+          <td>Apprécier</td>
+        </tr>
+        <tr>
+          <td>Zouave</td>
+          <td>Farceur</td>
+          <td>Plaisantin</td>
+        </tr>
+        <tr>
+          <td>Dégoter</td>
+          <td>Trouver</td>
+          <td>Dénicher</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div id="page-expressions" >
+    <button class="btn" id="btn-mots">mots</button>
+
+  <div id="table-expressions" style="display: none;">
+    <table>
+      <thead>
+        <tr>
+          <th>Registre  familier</th>
+          <th>Registre  courant</th>
+          <th>Registre  soutenu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Avoir la patate</td>
+          <td>Avoir la forme</td>
+          <td>Être en pleine santé</td>
+        </tr>
+        <tr>
+          <td>Faire la grasse matinée</td>
+          <td>Dormir tard</td>
+          <td>Se reposer le matin</td>
+        </tr>
+        <tr>
+          <td>Tomber dans les pommes</td>
+          <td>S'évanouir</td>
+          <td>Perdre connaissance</td>
+        </tr>
+        <tr>
+          <td>Se mettre sur son 31</td>
+          <td>Se mettre sur son trente-et-un</td>
+          <td>Se vêtir élégamment</td>
+        </tr>
+        <tr>
+          <td>Avoir un poil dans la main</td>
+          <td>Être fainéant</td>
+          <td>Être paresseux</td>
+        </tr>
+        <tr>
+          <td>Mettre les pieds dans le plat</td>
+          <td>Parler maladroitement</td>
+          <td>Commettre une indélicatesse</td>
+        </tr>
+        <tr>
+          <td>Prendre ses jambes à son cou</td>
+          <td>S'enfuir rapidement</td>
+          <td>Fuir précipitamment</td>
+        </tr>
+        <tr>
+          <td>Avoir le bras long</td>
+          <td>Avoir de l'influence</td>
+          <td>Avoir du pouvoir</td>
+        </tr>
+        <tr>
+          <td>Raconter des salades</td>
+          <td>Raconter des mensonges</td>
+          <td>Préfabriquer des récits</td>
+        </tr>
+        <tr>
+          <td>Tirer les vers du nez</td>
+          <td>Obtenir des informations difficilement</td>
+          <td>Interroger avec insistance</td>
+        </tr>
+        <tr>
+          <td>Être le dindon de la farce</td>
+          <td>Être la victime</td>
+          <td>Être le jouet</td>
+        </tr>
+        <tr>
+          <td>Casser les pieds</td>
+          <td>Ennuyer</td>
+          <td>Incommoder</td>
+        </tr>
+        <tr>
+          <td>Prendre son pied</td>
+          <td>Prendre du plaisir</td>
+          <td>Profiter pleinement</td>
+        </tr>
+        <tr>
+          <td>Tomber dans les bras de Morphée</td>
+          <td>S'endormir</td>
+          <td>Se plonger dans le sommeil</td>
+        </tr>
+        <tr>
+          <td>Mettre les bouchées doubles</td>
+          <td>Accélérer</td>
+          <td>Intensifier les efforts</td>
+        </tr>
+        <tr>
+          <td>Avoir la gueule de bois</td>
+          <td>Avoir mal à la tête après une soirée</td>
+          <td>Être victime des excès de la veille</td>
+        </tr>
+        <tr>
+          <td>Mettre de l'eau dans son vin</td>
+          <td>Adoucir ses propos</td>
+          <td>Tempérer ses exigences</td>
+        </tr>
+        <tr>
+          <td>Manger son chapeau</td>
+          <td>Être surpris</td>
+          <td>Être décontenancé</td>
+        </tr>
+        <tr>
+          <td>Tomber sur un os</td>
+          <td>Rencontrer des difficultés</td>
+          <td>Se heurter à un obstacle</td>
+        </tr>
+        <tr>
+          <td>Se creuser la tête</td>
+          <td>Réfléchir intensément</td>
+          <td>Chercher une solution</td>
+        </tr>
+        <tr>
+          <td>Avoir les yeux plus gros que le ventre</td>
+          <td>Être trop gourmand</td>
+          <td>Se surestimer</td>
+        </tr>
+        <tr>
+          <td>Faire la fine bouche</td>
+          <td>Être difficile en mangeant</td>
+          <td>Être exigeant</td>
+        </tr>
+        <tr>
+          <td>Se mettre le doigt dans l'œil</td>
+          <td>Se tromper</td>
+          <td>Avoir une fausse perception</td>
+        </tr>
+        <tr>
+          <td>Prendre son courage à deux mains</td>
+          <td>Rassembler son courage</td>
+          <td>Dépasser sa peur</td>
+        </tr>
+        <tr>
+          <td>Mettre les points sur les i</td>
+          <td>Être précis</td>
+          <td>Clarifier les choses</td>
+        </tr>
+        <tr>
+          <td>Battre le fer tant qu'il est chaud</td>
+          <td>Profiter d'une opportunité</td>
+          <td>Agir au bon moment</td>
+        </tr>
+        <tr>
+          <td>Se jeter dans la gueule du loup</td>
+          <td>S'exposer à un danger</td>
+          <td>Prendre un risque</td>
+        </tr>
+        <tr>
+          <td>Passer l'éponge</td>
+          <td>Pardonner</td>
+          <td>Accepter les excuses</td>
+        </tr>
+        <tr>
+          <td>Poser un lapin</td>
+          <td>Ne pas venir à un rendez-vous</td>
+          <td>Ignorer un engagement</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script>
+    var btnExpressions = document.getElementById('btn-expressions');
+    var btnMots = document.getElementById('btn-mots');
+    var pageMots = document.getElementById('page-mots');
+    var pageExpressions = document.getElementById('page-expressions');
+    var tableExpressions = document.getElementById('table-expressions');
+
+    btnExpressions.addEventListener('click', function() {
+      pageMots.style.display = 'none';
+      pageExpressions.style.display = 'block';
+      tableExpressions.style.display = 'block';
+    });
+
+    btnMots.addEventListener('click', function() {
+      pageExpressions.style.display = 'none';
+      pageMots.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
